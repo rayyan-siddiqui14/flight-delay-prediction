@@ -1,0 +1,9 @@
+data/
+notebooks/
+sql/
+figures/
+.venv/
+.git/
+*.duckdb
+results/test_meta.csv
+results/test_preds*.npy
