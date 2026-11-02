@@ -326,6 +326,18 @@ operational gap, and the clearest case for adding weather data.
 
 
 
+### Docker
+Containerized the app with a python:3.12-slim base. Hit a runtime error on first run —
+LightGBM needs libgomp1 (OpenMP) for parallel processing, which the slim image doesn't
+include. Added it via apt-get and cleared the package index afterward to keep the image small.
+
+Also used a separate requirements-app.txt with only the five packages the app imports,
+rather than the full dev environment, and a .dockerignore to keep the multi-GB data folder
+out of the build context.
+
+Run with: docker build -t flight-delay . && docker run -p 8501:8501 flight-delay
+
+
 
 
 

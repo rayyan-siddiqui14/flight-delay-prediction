@@ -159,6 +159,8 @@ docker build -t flight-delay .
 docker run -p 8501:8501 flight-delay
 ```
 
+docker images flight-delay
+
 ## Author
 
 [Rayyan Siddiqui] · [https://www.linkedin.com/in/rayyan-siddiqui12/] · [rayyansiddiquizz060@gmail.com]
