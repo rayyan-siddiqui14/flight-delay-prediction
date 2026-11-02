@@ -1,5 +1,5 @@
-Environment
-
-python -m venv .venv
-source .venv/bin/activate
-pip install pandas numpy duckdb matplotlib seaborn scikit-learn lightgbm shap streamlit jupyter ipykernel
+streamlit
+pandas
+numpy
+scikit-learn
+lightgbm
