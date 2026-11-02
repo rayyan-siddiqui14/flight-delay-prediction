@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+data/raw/
+data/processed/
+*.duckdb
+.DS_Store
+
+
+results/test_meta.csv
+results/test_preds*.npy
